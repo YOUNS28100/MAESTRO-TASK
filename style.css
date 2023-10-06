@@ -1,0 +1,494 @@
+/* Par défaut, le site affiche les écrans mobiles 600px, first breakpoint 500px, 800px */
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway&family=Recursive&display=swap');
+
+/* KEYFRAMES FOR TRANSLATE FOOTER PROFIL */
+@keyframes slideName {
+    from {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(-300%)
+    }
+
+    100% {
+        transform: translateX(0%);
+
+    }
+}
+
+* {
+    font-family: 'monospace';
+}
+
+html,
+body {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background-color: #F7E1D7;
+}
+
+.logo {
+    text-align: left;
+    background-color: #F7E1D7;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    padding: 0;
+}
+
+/* Styles du header */
+header {
+    color: black;
+    font-family: monospace;
+    font-size: 18px;
+    background-color: #F7E1D7;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #F7E1D7;
+}
+
+/* Style du logo */
+
+.logo img {
+    width: 100px;
+    height: 100px;
+    margin-left: 20px;
+    width: 120px;
+    height: auto;
+    margin-left: 20px;
+    margin-top: 20px;
+
+}
+
+/* Styles des icônes de mood */
+
+.mood {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.mood img {
+    width: 80px;
+    height: 80px;
+    margin-right: 5px;
+    margin-top: 20px;
+    text-align: left;
+    cursor: pointer;
+}
+
+/*Style des icônes de mood en gris*/
+.mood img.grayed {
+    filter: grayscale(100%)
+}
+
+/*Style heure*/
+.currentTime {
+    font-size: 30px;
+    font-family: monospace;
+    text-align: center;
+    margin-top: 0;
+    font-weight: bold;
+}
+
+/*Sytle date*/
+.currentDate {
+    font-size: 17px;
+    text-align: center;
+    margin-bottom: 5px;
+    margin-top: 75px;
+}
+
+/*Style fleurs et plantes*/
+.flowers {
+    width: 60px;
+    height: 80px;
+    position: relative;
+    margin-right: 20px;
+}
+
+.plants {
+    float: right;
+    transform: rotate(270deg);
+    margin-bottom: 0;
+    margin-right: 3rem;
+    position: relative;
+    animation: moveOnSpot 2s infinite alternate;
+}
+
+/* Mouvement de la plantes*/
+@keyframes moveOnSpot {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(1deg);
+    }
+}
+
+footer {
+
+    bottom: 0;
+    width: 100%;
+}
+
+.content {
+    text-align: center;
+    padding: 20px 20px 40px 20px;
+}
+
+.title-h1 h1 {
+    margin: 0.5rem 0;
+    font-size: 1.5rem;
+}
+
+.title-h1 {
+    display: flex;
+    justify-content: center;
+    color: black;
+    background-color: #EDAFB8;
+    box-sizing: content-box;
+    margin: 0 1.5rem 3rem 1.5rem;
+
+}
+
+.dropdown-menu-content {
+    display: none;
+    list-style: none;
+    background-color: rgb(246, 235, 146);
+    border: 0;
+    width: 70px;
+    text-align: center;
+}
+
+.removeFour, .removeThree, .removeTwo, .removeOne {
+    margin-left: 90%;
+    margin-top: 5%;
+    width: 1rem;
+    height: 1rem;
+    background-color: rgb(246, 250, 242);
+    box-shadow: 3px 3px 6px 0px #000000;
+    background-color: #F7E1D7;
+}
+
+.dropdown-menu-content li {
+    margin-bottom: 10px;
+}
+
+.visible {
+    font-family: Courier New, Courier, 'monospace';
+    display: block;
+    list-style: none;
+    background-color: rgb(246, 235, 146);
+    width: 300px;
+    text-align: center;
+}
+
+.visible2 {
+    font-family: Courier New, Courier, 'monospace';
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    list-style: none;
+    text-align: center;
+    background-color: #F7E1D7
+}
+
+.post-it {
+
+    box-shadow: 7px 7px 10px 0px #000000;
+    background-color: rgb(246, 235, 146);
+    border-color: #4e4c4b86;
+    border-width: 4px;
+    border-radius: 16px;
+    margin: 2rem 3.5rem;
+    min-height: 20rem;
+    width: 450px;
+    overflow: auto;
+    word-wrap: break-word;
+}
+
+.post-itU {
+    box-shadow: 7px 7px 10px 0px #000000;
+    background-color: #e85d72;
+    border-color: #4e4c4b86;
+    border-width: 4px;
+    border-radius: 16px;
+    margin-left: 3.5rem;
+    margin-right: 3.5rem;
+    min-height: 20rem;
+    width: 450px;
+    overflow: auto;
+    word-wrap: break-word;
+}
+
+/* test de mise en page pour les futurs post-it car celui reste affiché*/
+.miseenpageform {
+    box-shadow: 7px 7px 10px 0px #000000;
+    background-color: rgb(246, 235, 146);
+    border-radius: 16px;
+    margin-left: 4rem;
+    margin-right: 4rem;
+    min-height: 20rem;
+}
+
+.post-its {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.formbug {
+    display: none;
+}
+
+.tasklistOne #tasklistTwo .tasklistThree .tasklistFour {
+    max-width: 20em;
+    max-height: 20em;
+}
+
+#tasklistTwo {
+    width: auto;
+    height: fit-content;
+    overflow-y: auto;
+    word-wrap: break-word;
+}
+
+#formOne, #formTwo, #formThree, #formFour {
+    width: fit-content;
+    height: fit-content;
+    margin: auto;
+    margin-bottom: 1em;
+    padding: 1em 0;
+}
+
+ul {
+    width: auto;
+    height: auto;
+    padding: auto;
+    padding-right: 1em;
+    list-style: none;
+}
+
+
+form {
+    display: flex;
+    justify-content: center;
+}
+
+.ul_btn {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    padding: 0;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+
+.buttonadd {
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: Courier New, Courier, 'monospace';
+    width: 300px;
+    background-color: rgb(246, 235, 146);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border: 0;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+.bts {
+    font-family: Courier New, Courier, 'monospace';
+    display: flex;
+    justify-content: center;
+    width: 300px;
+    background-color: rgb(246, 235, 146);
+    border: 0;
+    padding: 0.8rem 0;
+}
+
+/* grid pour les posts it, class post-Its avec un de largeur */
+
+/* ----------------------FOOTER STYLE------------------------------- */
+
+.footer_class {
+    position: fixed;
+    bottom: 0;
+    background-color: #EDAFB8;
+    display: flex;
+    width: 100%;
+    min-height: 15vh;
+    max-height: max-content;
+    font-family: 'Recursive', sans-serif;
+}
+
+.left_section {
+    min-width: 48.5%;
+}
+
+.left_section div {
+    min-width: 50%;
+    font-size: 0.8rem;
+}
+
+#mfUp {
+    margin-left: 2rem;
+}
+
+#mfDown {
+    margin-left: 6.5rem;
+}
+
+.text_footer_left {
+    margin-left: 2rem;
+}
+
+.dark_tray {
+    min-width: 3px;
+    max-width: 3px;
+    background-color: black;
+    border-radius: 5px;
+    margin: 0.5rem 0 0.5rem 1rem;
+}
+
+.right_section {
+    min-width: 48.5%;
+    display: flex;
+    line-height: 0.5rem;
+    align-items: center;
+    overflow: hidden;
+
+}
+
+.right_section div {
+    min-width: 100%;
+    font-size: 0.8rem;
+    animation: slideName 40s linear infinite;
+}
+
+.right_section div a {
+    text-decoration: none;
+    font-family: monospace;
+    color: black;
+    line-height: 1;
+}
+
+.right_section div:nth-child(1) {
+    padding-left: 1rem;
+}
+
+/* Media query pour des écrans en dessous de 600px */
+@media screen and (max-width: 600px) {
+
+    .post-itU {
+        box-shadow: 7px 7px 10px 0px #000000;
+        background-color: #e85d72;
+        border-color: #4e4c4b86;
+        border-width: 4px;
+        border-radius: 16px;
+        margin-left: 3.5rem;
+        margin-right: 3.5rem;
+        min-height: 20rem;
+        width: 450px;
+        overflow: auto;
+        word-wrap: break-word;
+        }
+
+    .right_section div {
+        animation: slideName 15s linear infinite;
+    }
+
+    .currentDate {
+        font-size: 14px;
+    }
+
+    .currentTime {
+        font-size: 20px;
+    }
+
+    .mood img {
+        width: 50px;
+    }
+
+    .logo img {
+        width: 100px;
+    }
+
+    ul {
+    width: 65%;
+    height: 100%;
+    padding: 0;
+    margin: auto;
+    }
+
+    li {
+        padding-left: 1em;
+        list-style-type: none;
+        margin-top: 1em;
+    }
+}
+
+/* Media query pour des écrans au-dessus de 1200px */
+@media screen and (min-width: 1200px) {
+
+.left_section {
+        text-align: center;
+    }
+
+.right_section div {
+        animation: none;
+        min-width: 25%;
+        font-size: 1.2rem;
+        font-family: monospace;
+    }
+
+    /* Ajoutez vos styles pour les écrans au-dessus de 1200px ici */
+    .post-its {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, 30%);
+        grid-gap: 3rem;
+        padding-top: 4rem;
+    }
+
+
+.post-it {
+        box-shadow: 7px 7px 10px 0px #000000;
+        background-color: rgb(246, 235, 146);
+        border-color: #4e4c4b86;
+        border-width: 4px;
+        border-radius: 16px;
+        margin-left: 3.5rem;
+        margin-right: 3.5rem;
+        min-height: 20rem;
+        width: 450px;
+        overflow: none;
+        word-wrap: break-word;
+        }
+
+    }
+
+@media screen and (max-width: 422px) {
+
+    .mood img {
+        width: 2rem;
+        height: 2rem;
+    }
+
+    .logo img {
+        width: 6rem;
+        height: 6rem;
+    }
+}

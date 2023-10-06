@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maestro Task</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+ <div id="littleBody">
+
+    <!-- Header avec logo  -->
+    
+  <header>
+     <div class= "logo">
+      <a href="index.html">
+        <img src="https://i.ibb.co/G2WWQ3S/MAESTRO-TASK.png" alt="logo">
+      </a>
+     </div>
+     <div class="currentDateAndTime">
+      <p class="currentDate"></p>
+      <p class="currentTime"></p>
+     </div>
+     <div class="mood">
+        <img src="https://img.icons8.com/pulsar-color/48/happy.png" alt="happy"/>
+        <img src="https://img.icons8.com/pulsar-color/48/neutral-emoticon.png" alt="neutral-emoticon"/>
+        <img src="https://img.icons8.com/pulsar-color/48/sad.png" alt="sad"/>
+     </div>
+
+  </header>
+
+      <!-- Pour l'heure  -->
+
+ <div class="content">
+    <div class="date">
+      <p class="currentDate"></p>
+    </div>
+    <div class="time">
+      <p class="currentTime"></p>
+    </div>
+   </div>
+
+    <!-- H1  -->
+    
+  <div class="title-h1">
+    <h1>MA TO DO LISTE</h1>
+  </div>
+
+<div class = "flowers">
+  <img src="https://img.icons8.com/pulsar-color/70/flower.png" alt="flower"/>
+</div>
+    
+<!-- Pour les post-its  -->
+    
+ <div class="post-its">
+
+  </div>
+
+
+  <!-- Je créé ma form template pour reproduction ensuite, ne pas effacer avant un moment svp -->
+  <div class="miseenpageform formbug" >
+    <form id="form">
+        <label for="todo"> Ajoutez une tâche : </label>
+          <input
+          type="text"
+          name="todo"
+          placeholder="Inscrivez une tâche ici"
+          value=""
+          id="todoinput"
+          />   
+        <input type="submit" value="send" />
+        </form>
+  </div>  
+
+<!-- Pour le bouton ajouter une liste  -->
+
+ <div>
+    <ul class="ul_btn">
+        <button class="buttonadd dropdown-btn">CREER UNE TO-DO LISTE</button>
+
+       <div class="dropdown-menu-content">
+          <button class="button1 bts">Ma TO-DO Liste</button>
+          <button class="button2 bts">Tâche urgente</button>
+          <button class="button3 bts">Mes courses</button>
+          <button class="button4 bts">TO-DO liste mensuelle</button>
+        </div>
+      </ul>
+ </div>   
+
+<div class="plants">
+  <img src="https://img.icons8.com/officel/16/180/natural-food.png" alt="natural-food"/></div> 
+</div>
+
+<!-- Footer défilant  -->
+
+ <footer class="footer_class"> 
+  <!-- styling footer left & right side -->
+  <section class="left_section">
+    <h3 class="maestro_footer" id="mfUp">MAESTRO</h3>
+    <h3 class="maestro_footer" id="mfDown">TASK</h3>
+    <p class="text_footer_left">L'orchestre de votre réussite !</p>
+  </section>
+  <div class="dark_tray"></div>
+  <section class="right_section">
+    <div class="profil_tugba">
+      <a href="https://www.linkedin.com/in/tugba-bayram-6413b3294/" target="_blank">
+      <p>BAYRAM<br>Tugba</p>
+    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="3rem" height="3rem" viewBox="0 0 24 24">
+      <path d="M 21.800781 0 L 2.199219 0 C 1 0 0 1 0 2.199219 L 0 21.800781 C 0 23 1 24 2.199219 24 L 21.800781 24 C 23 24 24 23 24 21.800781 L 24 2.199219 C 24 1 23 0 21.800781 0 Z M 7 20 L 3 20 L 3 9 L 7 9 Z M 5 7.699219 C 3.800781 7.699219 3 6.898438 3 5.898438 C 3 4.800781 3.800781 4 5 4 C 6.199219 4 7 4.800781 7 5.800781 C 7 6.898438 6.199219 7.699219 5 7.699219 Z M 21 20 L 17 20 L 17 14 C 17 12.398438 15.898438 12 15.601563 12 C 15.300781 12 14 12.199219 14 14 C 14 14.199219 14 20 14 20 L 10 20 L 10 9 L 14 9 L 14 10.601563 C 14.601563 9.699219 15.601563 9 17.5 9 C 19.398438 9 21 10.5 21 14 Z"></path>
+      </svg>
+    </a>
+    </div>
+    <div class="profil_Jean-Francois">
+     <a href="https://www.linkedin.com/in/jean-fran%C3%A7ois-h-a374ba271/" target="_blank">
+      <p>HAFID<br>Jean François</p>
+    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="3rem" height="3rem" viewBox="0 0 24 24">
+      <path d="M 21.800781 0 L 2.199219 0 C 1 0 0 1 0 2.199219 L 0 21.800781 C 0 23 1 24 2.199219 24 L 21.800781 24 C 23 24 24 23 24 21.800781 L 24 2.199219 C 24 1 23 0 21.800781 0 Z M 7 20 L 3 20 L 3 9 L 7 9 Z M 5 7.699219 C 3.800781 7.699219 3 6.898438 3 5.898438 C 3 4.800781 3.800781 4 5 4 C 6.199219 4 7 4.800781 7 5.800781 C 7 6.898438 6.199219 7.699219 5 7.699219 Z M 21 20 L 17 20 L 17 14 C 17 12.398438 15.898438 12 15.601563 12 C 15.300781 12 14 12.199219 14 14 C 14 14.199219 14 20 14 20 L 10 20 L 10 9 L 14 9 L 14 10.601563 C 14.601563 9.699219 15.601563 9 17.5 9 C 19.398438 9 21 10.5 21 14 Z"></path>
+      </svg>
+    </a>
+    </div>
+    <div class="profil_Quentin">
+      <a href="https://www.linkedin.com/in/quentin-verwaerde-54520a20/" target="_blank">
+      <p>VERWAERDE<br>Quentin</p>
+      <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="3rem" height="3rem" viewBox="0 0 24 24">
+      <path d="M 21.800781 0 L 2.199219 0 C 1 0 0 1 0 2.199219 L 0 21.800781 C 0 23 1 24 2.199219 24 L 21.800781 24 C 23 24 24 23 24 21.800781 L 24 2.199219 C 24 1 23 0 21.800781 0 Z M 7 20 L 3 20 L 3 9 L 7 9 Z M 5 7.699219 C 3.800781 7.699219 3 6.898438 3 5.898438 C 3 4.800781 3.800781 4 5 4 C 6.199219 4 7 4.800781 7 5.800781 C 7 6.898438 6.199219 7.699219 5 7.699219 Z M 21 20 L 17 20 L 17 14 C 17 12.398438 15.898438 12 15.601563 12 C 15.300781 12 14 12.199219 14 14 C 14 14.199219 14 20 14 20 L 10 20 L 10 9 L 14 9 L 14 10.601563 C 14.601563 9.699219 15.601563 9 17.5 9 C 19.398438 9 21 10.5 21 14 Z"></path>
+      </svg>
+    </a>
+    </div>
+    <div class="profil_Sebastien">
+      <a href="https://www.linkedin.com/in/s%C3%A9bastien-lambranca-46ab7025a/" target="_blank">
+      <p>LAMBRANCA<br>Sébastien</p> 
+      <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="3rem" height="3rem" viewBox="0 0 24 24">
+      <path d="M 21.800781 0 L 2.199219 0 C 1 0 0 1 0 2.199219 L 0 21.800781 C 0 23 1 24 2.199219 24 L 21.800781 24 C 23 24 24 23 24 21.800781 L 24 2.199219 C 24 1 23 0 21.800781 0 Z M 7 20 L 3 20 L 3 9 L 7 9 Z M 5 7.699219 C 3.800781 7.699219 3 6.898438 3 5.898438 C 3 4.800781 3.800781 4 5 4 C 6.199219 4 7 4.800781 7 5.800781 C 7 6.898438 6.199219 7.699219 5 7.699219 Z M 21 20 L 17 20 L 17 14 C 17 12.398438 15.898438 12 15.601563 12 C 15.300781 12 14 12.199219 14 14 C 14 14.199219 14 20 14 20 L 10 20 L 10 9 L 14 9 L 14 10.601563 C 14.601563 9.699219 15.601563 9 17.5 9 C 19.398438 9 21 10.5 21 14 Z"></path>
+      </svg>
+      </a>
+    </div>
+  </section>
+</footer>
+
+<!-- Lien Javascript  -->
+<script src="main.js"></script>
+</body>
+</html>
